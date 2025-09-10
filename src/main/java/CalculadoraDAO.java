@@ -10,7 +10,7 @@ public class CalculadoraDAO {
         PreparedStatement stmt = conn.prepareStatement(sql)){
             stmt.setString(1, valorExpressao);
             stmt.setDouble(2, valorResultado);
-            stmt.executeUpdate();
+            stmt.executeUpdate(); //executa a ação
 
         } catch (SQLException e){
             e.printStackTrace();
